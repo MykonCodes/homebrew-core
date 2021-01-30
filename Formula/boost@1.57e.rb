@@ -1,4 +1,4 @@
-class BoostAT157 < Formula
+class BoostAT157e < Formula
   desc "Collection of portable C++ source libraries"
   homepage "https://www.boost.org"
   url "https://downloads.sourceforge.net/project/boost/boost/1.57.0/boost_1_57_0.tar.bz2"
@@ -16,8 +16,6 @@ class BoostAT157 < Formula
   end
 
   keg_only :versioned_formula
-
-  disable! date: "2020-09-01", because: :versioned_formula
 
   # Fix build on Xcode 11.4
   patch do
